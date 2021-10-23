@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/gin-gonic/gin"
 )
@@ -45,5 +46,6 @@ func main() {
 	router := gin.Default()
 	router.GET("/harajCar", getHarajCar)
 	router.GET("/harajCar/:title", getHarajCarByTitle)
-	router.Run("localhost:8080")
+	// router.Run("localhost:8080")
+	router.Run(":" + os.Getenv("PORT"))
 }
