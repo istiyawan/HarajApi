@@ -44,8 +44,8 @@ func getHarajCarByTitle(c *gin.Context) {
 
 func main() {
 	router := gin.Default()
-	router.GET("/harajCar", getHarajCar)
-	router.GET("/harajCar/:title", getHarajCarByTitle)
+	router.GET("/", getHarajCar)
+	router.GET("/:title", getHarajCarByTitle)
 	// router.Run("localhost:8080")
 	router.Run(":" + os.Getenv("PORT"))
 }
