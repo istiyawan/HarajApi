@@ -13,7 +13,7 @@ type HarajApi struct {
 	City         string `json:"city"`
 	CommentCount int    `json:"commentCount"`
 	Date         int    `json:"date"`
-	ThumbURL     string `json:"thumbUrl"`
+	ThumbURL     string `json:"thumbURL"`
 	Title        string `json:"title"`
 	Username     string `json:"username"`
 }
