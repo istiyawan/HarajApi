@@ -192,7 +192,7 @@ func getHarajCarByTitle(c *gin.Context) {
 	fmt.Println("title", title)
 
 	for _, car := range harajAPI {
-		if car.title == title {
+		if car.Title == title {
 			c.IndentedJSON(http.StatusOK, car)
 			return
 		}
